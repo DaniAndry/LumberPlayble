@@ -46,7 +46,7 @@ public abstract class Character : MonoBehaviour
         if (_currentCargoIndex == 0)
             return 0;
             
-        int logsUnloaded = truck.LoadLogs(_currentCargoIndex);
+        int logsUnloaded = truck.LoadLogs(_currentCargoIndex, gameObject);
         
         for (int i = 0; i < logsUnloaded; i++)
         {

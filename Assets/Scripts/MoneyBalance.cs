@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using DG.Tweening;
+using System;
 
 public class MoneyBalance : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class MoneyBalance : MonoBehaviour
     private int _money = 15;
     public int Money => _money;
     private Tween moneyTween;
+    
+    public event Action<int> OnMoneyChanged;
 
     private void Start()
     {
@@ -45,6 +48,10 @@ public class MoneyBalance : MonoBehaviour
             {
                 _money = targetValue;
                 UpdateText(_money);
+                OnMoneyChanged?.Invoke(_money);
             });
+            
+        // Вызываем событие немедленно, чтобы обеспечить реакцию на изменение баланса
+        OnMoneyChanged?.Invoke(targetValue);
     }
 }

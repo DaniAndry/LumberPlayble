@@ -1,0 +1,44 @@
+# Настройка анимации перелета монет
+
+## Шаг 1: Подготовка компонентов
+1. Найдите в проекте подходящий префаб монеты для анимации (любой объект с Image компонентом)
+2. Найдите или создайте Canvas для отображения анимации
+
+## Шаг 2: Настройка MoneyFlyAnimation
+1. Создайте пустой GameObject на Canvas и назовите его "MoneyFlyAnimation"
+2. Добавьте компонент MoneyFlyAnimation
+3. Настройте следующие параметры:
+   - Money Prefab: назначьте сюда существующий префаб монеты из проекта
+   - Target UI Element: перетащите сюда RectTransform объекта с текстом баланса денег
+   - Count Of Coins: установите количество монет для анимации (рекомендуется 5-15)
+   - Min/Max Duration: длительность анимации в секундах
+   - Target Canvas: перетащите сюда основной Canvas
+   - Canvas Rect Transform: автоматически заполнится, если указан Canvas
+
+## Шаг 3: Настройка MoneyController
+1. Найдите объект с компонентом MoneyController
+2. В инспекторе найдите поле Money Fly Animation
+3. Перетащите туда созданный объект MoneyFlyAnimation
+
+## Шаг 4: Использование в коде
+Теперь вы можете вызывать анимацию следующими способами:
+
+1. Из объекта в мире (например, грузовика):
+```csharp
+MoneyController.Instance.ChangeBalanceWithVisual(сумма, transform.position);
+```
+
+2. Из UI элемента:
+```csharp
+MoneyController.Instance.ChangeBalanceWithVisual(сумма, uiRectTransform);
+```
+
+3. Для отображения траты (монеты улетают от UI):
+```csharp
+MoneyController.Instance.ChangeBalanceWithVisual(сумма, transform.position, true);
+```
+
+## Примечания
+- Не используйте чрезмерное количество монет, это может повлиять на производительность
+- При необходимости вы можете настроить различные параметры анимации в инспекторе
+- Убедитесь, что префаб монеты имеет компонент Image или Sprite Renderer

@@ -33,29 +33,39 @@
       "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
     ],
     [
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Builds/BuildButton.cs"
-    ],
-    [
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Audio/SimpleAudioManager.cs",
       "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Builds/BuildManager.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/GameManager.cs",
       "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/MoneyController.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/MoneyBalance.cs"
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Truck/TruckMover.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/CharactersMover.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/MovePoint.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/LoadPoint.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/SimplePoint.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/TruckUnloadPoint.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Truck/TruckManager.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/ChopperManager.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/UnloadPoint.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Truck/Truck.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/Character.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/Chopper.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/Forklift.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tree.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/UI/TruckProgressBarSetup.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/MoneyBalance.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/UI/MoneyFlyAnimation.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Builds/BuildButton.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Conveyor.cs",
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/UI/ButtonLight.cs"
     ],
     [
       "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Builds/Garage.cs"
     ],
     [
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/Character.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/CharactersMover.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/MovePoint.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/LoadPoint.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/SimplePoint.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Points/UnloadPoint.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/Chopper.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Characters/Forklift.cs",
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tree.cs"
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/Economy/BalanceManager.cs"
     ],
     [
-      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/\u0421onveyor.cs"
+      "D:/UnityProjects/Lumber/LunaTemp/stage3/processed-scripts/Assets/Scripts/UI/ClickCta.cs"
     ],
     [
       "D:/Luna/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"

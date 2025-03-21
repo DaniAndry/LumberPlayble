@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
@@ -17,14 +16,31 @@ public class BuildManager : MonoBehaviour
     private void Awake()
     {
         _buildButton1.onClick.AddListener(() => _moneyController.TryBuild(8, _build1));
-        _buildButton2.onClick.AddListener(() => _moneyController.TryBuild(12, _build2));
-        _buildButton3.onClick.AddListener(() => _moneyController.TryBuild(125, _build3));
+        _buildButton2.onClick.AddListener(() => _moneyController.TryBuild(20, _build2));
+        _buildButton3.onClick.AddListener(() => _moneyController.TryBuild(100, _build3));
+
+        _moneyController.OnBuildSuccess += OnBuildSuccess;
     }
 
-
-    private UnityAction TryToBuild(int price)
+    private void OnDestroy()
     {
-        _moneyController.ChangeBalance(price, true);
-        return null;
+        _moneyController.OnBuildSuccess -= OnBuildSuccess;
+    }
+
+    private void OnBuildSuccess(GameObject buildObject)
+    {
+        SimpleAudioManager.Instance?.PlayHouseAppearSound();
+        if (buildObject == _build1)
+        {
+            _buildButton1.gameObject.SetActive(false); 
+        }
+        else if (buildObject == _build2)
+        {
+            _buildButton2.gameObject.SetActive(false); 
+        }
+        else if (buildObject == _build3)
+        {
+            _buildButton3.gameObject.SetActive(false); 
+        }
     }
 }
